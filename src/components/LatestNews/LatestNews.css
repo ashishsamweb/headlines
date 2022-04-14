@@ -1,0 +1,36 @@
+.latest-news-img.col-md-3 img {
+    width: 100%;
+    object-fit: contain;
+}
+section.latest-news-outer {
+    padding-top: 20px;
+}
+.latest-news-outer h2 {
+    text-align: left;
+    font-size: 23px;
+    font-weight: 600;
+}
+.latest-news-grid{
+    padding-top: 10px;
+}
+.latest-news-img h5 {
+    font-size: 17px;
+    padding-top: 6px;
+}
+.latest-news-img h6 {
+margin: 0;
+padding-top: 9px;
+}
+.latest-news-img {
+    padding-top: 12px;
+}
+.latest-news-button {
+    text-align: center;
+}
+.latest-news-button a {
+    background-color: #c09;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+.newsletter {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+
+.newsletter-form {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.category-grid-content h3 {
+    font-size: 16px;
+}
+.newsletter-form h1 {
+    text-align: center;
+    color: #fff;
+}
+.newsletter-form h5 {
+    text-align: center;
+    color: #fff;
+}

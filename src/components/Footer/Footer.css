@@ -1,0 +1,58 @@
+.footer {
+    background-color: black;
+    margin-top: 3%;
+}
+
+.left-footer 
+h5 {
+    color: white;
+    margin-left: 28%;
+    margin-top: 17; 
+}
+.left-footer h1{
+    font-size: 54px;
+    font-weight: 900;
+    color: white;
+    margin-left: 28%;
+    margin-top: 36px; 
+}
+.right-footer li{
+    list-style: none
+}
+.left-col-link {
+    display: inline-block;
+    padding-left:  1%;
+}
+.left-col-link ,.right-col-link h4{
+    color: white;
+ 
+}
+.left-col-link a {
+    display: grid;
+    text-decoration: none;
+}
+
+.right-col-link {
+    display: inline-block;
+    padding: 6% 9%;
+}
+
+.right-col-link a {
+    display: grid;
+    text-decoration: none;
+    
+}
+.right-footer {
+    padding-left: 14%;
+}
+.Copyright {
+    color: white;
+    
+    margin-top: 1%;
+    text-align: center;  
+}
+.line{
+    background-color: white;
+    width: 100%;
+    height: 1px; 
+}

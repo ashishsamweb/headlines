@@ -1,0 +1,26 @@
+.category-grid-outer .cat-big-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 231px;
+}
+.cat-small-img img {
+    width: 108px;
+    object-fit: cover;
+    height: 59px;
+}
+.col-md-3.cat-img {
+    padding-top: 84px;
+}
+.category-header {
+    display: flex;
+    justify-content: space-between;
+}
+.category-grid-image.cat-small-img {
+    margin-right: 8px;
+}
+.category-grid {
+    display: flex;
+}
+.category-grid-outer {
+    padding-top: 15px;
+}

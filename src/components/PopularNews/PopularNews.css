@@ -1,0 +1,40 @@
+
+
+.sub-popular-list
+{
+ border: 1px solid black;
+ height: 10%;
+}
+
+.popular-list-img img{
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+   
+   
+}
+
+.popular-list-img{
+    margin-top: 10%;
+    height: 57%;
+   
+    margin-top: 2%;
+}
+.popular-list-title  {
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+    margin-top: 7%;
+   
+    height: 10%;
+
+}
+
+.load-btn 
+{
+    margin-top: 5%;
+    color: black;
+    color: bal;
+    background-color: #fff;
+    border-color: black;
+}

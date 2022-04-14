@@ -1,0 +1,19 @@
+.most-popular-img.col-md-3 img {
+    width: 100%;
+    object-fit: contain;
+}
+section.most-popular-outer {
+    padding-top: 20px;
+}
+.most-popular-outer h2 {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+}
+.most-popular-grid{
+    padding-top: 10px;
+}
+.most-popular-img h5 {
+    font-size: 17px;
+    padding-top: 10px;
+}
