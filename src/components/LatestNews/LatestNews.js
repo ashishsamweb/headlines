@@ -23,7 +23,7 @@ export const LatestNews = () => {
         <div className='container'>
             <div className='row'>
                 <div className="latest-news-title col-md-12">
-                    <h2>Latest news</h2>
+                    <h1>Latest Newses</h1>
                     
                 </div>
                 <div className="latest-news-title col-md-12">
