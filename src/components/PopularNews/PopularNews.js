@@ -1,6 +1,6 @@
 import React from 'react';
 import './PopularNews.css'
-import popularimg from '../../Images/image5.jpg'
+import popularimg from '../../images/image5.jpg'
 
 
 export const PopularNews = () => {

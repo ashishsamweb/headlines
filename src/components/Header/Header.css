@@ -7,9 +7,11 @@
 .nav-item li{  
 text-decoration: none;
 list-style: none;
-margin-left: 180%;
+margin-left: 10%;
 }
-
+li {
+    display: inline;
+  }
 
 .nav-item {
 display: inline-block;
@@ -32,6 +34,7 @@ margin-right: 3%;
     color: #000000;
     text-decoration: none;
 }
-.header {
-    background-color: #f3f3f3;
+.logo a{
+    color: #000 !important;
+    text-decoration: none;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
-import latestimg from '../../Images/latestimg.jpg'
-import ads from '../../Images/image.jpg'
-import './latest.css';
+import latestimg from '../../images/latestimg.png'
+import ads from '../../images/image.jpg'
+import './PostDetail.css';
 
-export const Latest = () => {
+export const PostDetail = () => {
     return (
         <section className='latest-section'>
             
