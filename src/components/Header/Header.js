@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -7,48 +8,42 @@ export const Header = () => {
       <nav className="container-fluid">
         <div className="navigator col-md-12">
           <div className="logo">
-            <h1>Headlines.com</h1>
+            <h1><Link to="/" alt="Logo">Headlines.com</Link></h1>
           </div>
           <div className="nav-item">
+          <li>
+              <Link to="/" alt="home">
+                Home
+              </Link>
+            </li>
+
             <li>
-              <a href="#" alt="media">
+              <Link to="/Latest">
                 Latest
-              </a>
+              </Link>
             </li>
-          </div>
-          <div className="nav-item">
+
+           
             <li>
-              <a href="#" alt="media">
-                Gadgets
-              </a>
-            </li>
-          </div>
-          <div className="nav-item">
-            <li>
-              <a href="#" alt="media">
+              <a href="/" alt="media">
                 Politics
               </a>
             </li>
-          </div>
-          <div className="nav-item">
+
             <li>
-              <a href="#" alt="media">
+              <a href="/" alt="media">
                 Sports
               </a>
             </li>
-          </div>
 
-          <div className="nav-item">
             <li>
-              <a href="#" alt="media">
+              <a href="/" alt="media">
                 Health
               </a>
             </li>
-          </div>
 
-          <div className="nav-item">
             <li>
-              <a href="#" alt="media">
+              <a href="/" alt="media">
                 Glamour
               </a>
             </li>

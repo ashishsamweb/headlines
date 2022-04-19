@@ -1,17 +1,18 @@
-import React from "react";
-import { useEffect } from "react";
-import image6 from "../../images/image6.jpg";
-import image7 from "../../images/image7.jpg";
-import image8 from "../../images/image8.jpg";
-import image9 from "../../images/image9.jpg";
-import image10 from "../../images/image10.jpg";
-import image11 from "../../images/image11.jpg";
-import image12 from "../../images/image12.jpg";
-import image13 from "../../images/image13.jpg";
+import React, { useEffect} from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchPosts } from "../../redux/action";
+
+
 import "./LatestNews.css";
-import axios from "axios";
+
 
 export const LatestNews = () => {
+
+  const { posts,  loading } = useSelector((state) => ({ ...state.data }));
+  const dispatch = useDispatch();
+
+  
+
   return (
     <section className="latest-news-outer">
       <div className="container">
@@ -19,90 +20,20 @@ export const LatestNews = () => {
           <div className="latest-news-title col-md-12">
             <h1>Latest Newses</h1>
           </div>
+          
           <div className="latest-news-title col-md-12">
             <div className="row">
+            {posts? posts.slice(0, 12).map((items) => (
               <div className="latest-news-img col-md-3">
-                <img src={image6} />
+                <img src={items.thumbnailUrl} />
                 <h6>Elcon</h6>
-                <h5>
-                  The EU wants to make all salaries transparent — here are 3
-                  pros and cons
-                </h5>
+                <h5>{items.title}</h5>
               </div>
-              <div className="latest-news-img col-md-3">
-                <img src={image7} />
-                <h6>Elcon</h6>
-                <h5>
-                  The EU wants to make all salaries transparent — here are 3
-                  pros and cons
-                </h5>
-              </div>
-              <div className="latest-news-img col-md-3">
-                <img src={image8} />
-                <h6>Elcon</h6>
-                <h5>
-                  The EU wants to make all salaries transparent — here are 3
-                  pros and cons
-                </h5>
-              </div>
-              <div className="latest-news-img col-md-3">
-                <img src={image9} />
-                <h6>Elcon</h6>
-                <h5>
-                  The EU wants to make all salaries transparent — here are 3
-                  pros and cons
-                </h5>
-              </div>
-              <div className="latest-news-img col-md-3">
-                <img src={image10} />
-                <h6>Elcon</h6>
-                <h5>
-                  The EU wants to make all salaries transparent — here are 3
-                  pros and cons
-                </h5>
-              </div>
-              <div className="latest-news-img col-md-3">
-                <img src={image11} />
-                <h6>Elcon</h6>
-                <h5>
-                  The EU wants to make all salaries transparent — here are 3
-                  pros and cons
-                </h5>
-              </div>
-              <div className="latest-news-img col-md-3">
-                <img src={image12} />
-                <h6>Elcon</h6>
-                <h5>
-                  The EU wants to make all salaries transparent — here are 3
-                  pros and cons
-                </h5>
-              </div>
-              <div className="latest-news-img col-md-3">
-                <img src={image13} />
-                <h6>Elcon</h6>
-                <h5>
-                  The EU wants to make all salaries transparent — here are 3
-                  pros and cons
-                </h5>
-              </div>
-              <div className="latest-news-img col-md-3">
-                <img src={image7} />
-                <h6>Elcon</h6>
-                <h5>
-                  The EU wants to make all salaries transparent — here are 3
-                  pros and cons
-                </h5>
-              </div>
-              <div className="latest-news-img col-md-3">
-                <img src={image10} />
-                <h6>Elcon</h6>
-                <h5>
-                  The EU wants to make all salaries transparent — here are 3
-                  pros and cons
-                </h5>
-              </div>
+              )) : ""}
             </div>
           </div>
+          
+
           <div className="latest-news-button">
             <a href="#">See all Latest news</a>
           </div>
