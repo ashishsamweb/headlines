@@ -6,13 +6,14 @@ import { Header } from "./components/Header/Header"
 import { Footer } from "./components/Footer/Footer"
 import { Home } from "./pages/Home/Home";
 import {BrowserRouter, Route, Switch} from "react-router-dom"
-
+import { Chart } from "./components/Chart/Chart";
 
 
 
 export const App = () => {
   const { posts,  loading } = useSelector((state) => ({ ...state.data }));
   const dispatch = useDispatch();
+  console.log(posts);
   useEffect(() => {
     dispatch(fetchPosts());
   }, [])
@@ -27,6 +28,7 @@ export const App = () => {
         <Header />
         <Switch>
         <Route exact path="/latest" component={Latest} />
+        <Route exact path="/chart" component={Chart} />
         <Route path="" component={Home} />
         </Switch>
         <Footer />

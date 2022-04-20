@@ -49,7 +49,7 @@ export const PopularNews = () => {
         </div>
         <div className='row'>
           <div className='load-btn col-md-8'>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Load More</button>
+            <button type="button" className="btn btn-secondary btn-lg btn-block">Load More</button>
           </div>
   </div>
 
