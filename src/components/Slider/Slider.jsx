@@ -12,7 +12,7 @@ export const Slider = () => {
     <section className='slider-outer'>
       <div className='container-fluid'>
         <div className='row'>
-            <div class='slider-left col-md-6'>
+            <div className='slider-left col-md-6'>
                 <div className='img-box slider1'>
                     <img src={slider1}  />
                     <div className='slider-content'>
@@ -28,9 +28,9 @@ export const Slider = () => {
                     </div>
                 </div>
             </div>
-            <div class='slider-right col-md-6'>
+            <div className='slider-right col-md-6'>
                 <div className='row'>
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                         <div className='img-box slider3'>
                         <img src={slider3}  />
                         <div className='slider-content'>
@@ -39,7 +39,7 @@ export const Slider = () => {
                         </div>
                     </div>
                     </div>
-                    <div class="col-md-6">
+                    <div className="col-md-6">
                         <div className='img-box slider4'>
                             <img src={slider4}  />
                             <div className='slider-content'>
@@ -48,7 +48,7 @@ export const Slider = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div className="col-md-12">
                         <div className='img-box slider5'>
                             <img src={slider5}  />
                             <div className='slider-content'>
